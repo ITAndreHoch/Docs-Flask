@@ -25,6 +25,7 @@ Finished processing dependencies for pip
 ```
 
 ***Installing Virtualenv with Pip***
+
 Virtualenv lets you create an isolated Python environment for your project
 To install virtualenv, use pip
 

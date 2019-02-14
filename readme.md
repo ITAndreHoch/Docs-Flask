@@ -3,7 +3,7 @@ Flask
 ***
 **Creating environment**
 
-Install **PIP**
+***Install PIP***
 
 pip is a package management system used to install and manage software packages written in Python.
 
@@ -23,6 +23,25 @@ Processing dependencies for pip
 Finished processing dependencies for pip
 
 ```
+
+***Installing Virtualenv with Pip***
+Virtualenv lets you create an isolated Python environment for your project
+To install virtualenv, use pip
+
+```
+pip install virtualenv
+```
+
+***Creating virtual env***
+
+```
+ virtualenv -p python hello
+Already using interpreter /usr/bin/python
+New python executable in /Users/andrzejhochbaum/Projects/Python/hello/bin/python
+Installing setuptools, pip, wheel...
+done.
+```
+ 
 
 
 

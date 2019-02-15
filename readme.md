@@ -80,6 +80,58 @@ Successfully installed Jinja2-2.10 MarkupSafe-1.1.0 Werkzeug-0.14.1 click-7.0 fl
 ```
 
 
+check:
+
+```
+ pip list
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+Package      Version
+------------ -------
+Click        7.0    
+Flask        1.0.2  
+itsdangerous 1.1.0  
+Jinja2       2.10   
+MarkupSafe   1.1.0  
+```
+
+***
+
+***Creating example page***
+
+
+```
+cat hello.py 
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'Main Page AH'
+
+
+@app.route('/hello')
+def helloIndex():
+    return 'Hello World from Python Flask!'
+
+app.run(host='0.0.0.0', port= 5000)
+
+pip          19.0.2 
+setuptools   40.8.0 
+Werkzeug     0.14.1 
+wheel        0.33.0 
+
+
+```
+
+,where:
+
+* The script above simply creates the application object as an instance of class Flask imported from the flask package.
+* The __name__ variable passed to the Flask class is a Python predefined variable, which is set to the name of the module in which it is used.
+* routes module. The routes are the different URLs that the application implements. In Flask, handlers for the application routes are written as Python functions, called view functions.
+
+
+
 
 
 

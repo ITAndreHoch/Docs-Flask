@@ -130,6 +130,40 @@ wheel        0.33.0
 * The __name__ variable passed to the Flask class is a Python predefined variable, which is set to the name of the module in which it is used.
 * routes module. The routes are the different URLs that the application implements. In Flask, handlers for the application routes are written as Python functions, called view functions.
 
+***routes***
+
+example next script:
+
+```
+cat blog.py 
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'Main Page AH'
+
+
+@app.route('/author')
+def author():
+    return 'Andrzej Hochbaum'
+
+@app.route('/copyrights')
+def copyright():
+    return "Copyright 2019"
+
+
+```
+
+
+Key facts
+
+* A route is a mapping of an URL, website address,  to a Python function
+
+* Add @app.route('/hello') before a function definition, where hello is your URL path
+
+* The python return string is shown in the web browser
 
 
 

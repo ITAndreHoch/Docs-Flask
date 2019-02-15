@@ -45,8 +45,10 @@ done.
 
 ***Activating new environmet***
 
-``` source bin/activate
+``` 
+source bin/activate
 (hello):hello$ 
+
 ```
 
 

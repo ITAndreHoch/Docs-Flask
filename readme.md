@@ -42,7 +42,12 @@ New python executable in /Users/andrzejhochbaum/Projects/Python/hello/bin/python
 Installing setuptools, pip, wheel...
 done.
 ```
- 
+
+***Activating new environmet***
+
+``` source bin/activate
+(hello):hello$ 
+```
 
 
 

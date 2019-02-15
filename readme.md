@@ -51,7 +51,7 @@ source bin/activate
 
 ```
 
-*** Installing Flask***
+***Installing Flask***
 
 Create source dir and install flask
 

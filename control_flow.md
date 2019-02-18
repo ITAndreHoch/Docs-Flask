@@ -33,5 +33,20 @@ cat ./templates/control.html
   {% endif %}
 
 ```
+<img src="images/flask6.png " alt="drawing" width="300"/>
+
+We can add elsif condition:
+
+```
+ {% if name == 'Alice': %}
+      <h1>Hello  - {{name}} !</h1>
+  {% else %}
+      <h1> Oh no - wrong path {{name}}! </h1>
+  {% endif %}
+      
+```
+
+<img src="images/flask7.png " alt="drawing" width="300"/>
+
 
 

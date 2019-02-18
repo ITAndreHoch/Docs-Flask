@@ -1,7 +1,7 @@
 
 **TEMPLATES**
 
-It is possible to return the output of a function bound to a certain URL in the form of HTML. For instance, in the following script, hello() function will render ‘Hello World’ with <h1> tag attached to it.
+It is possible to return the output of a function bound to a certain URL in the form of HTML. For instance, in the following script, hello() function will render ‘Hello World’ with ```<h1>``` tag attached to it.
 
 ```
 from flask import Flask

@@ -90,4 +90,37 @@ cat ./templates/abc.html
 
 <img src="images/flask4.png " alt="drawing" width="300"/>
 
+***
+
+And now - we can change some values - example:
+
+cat multi.py 
+
+```
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def exampleIndex():
+    return render_template('index.html')
+
+@app.route('/hello/name')
+def helloIndex(name):
+    return render_template('hello.html', name=name)
+
+@app.route('/abc/<a>/<b>/<c>')
+def abcIndex(a,b,c):
+    context = { 'jeden':a, 'dwa':b, 'trzy':c }
+    return render_template('abc.html', context=context)
+
+
+app.run(host='0.0.0.0', port= 5000)
+
+
+```
+
+<img src="images/flask5.png " alt="drawing" width="300"/>
+
 

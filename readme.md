@@ -51,6 +51,14 @@ source bin/activate
 
 ```
 
+***Deactivating environment***
+
+```
+$ deactivate
+
+```
+
+
 ***Installing Flask***
 
 Create source dir and install flask

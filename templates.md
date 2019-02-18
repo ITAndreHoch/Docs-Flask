@@ -30,20 +30,36 @@ def index():
 
 if __name__ == '__main__':
    app.run(debug = True)
+   
+```
 Flask will try to find the HTML file in the templates folder, in the same folder in which this script is present.
 
 Application folder
-Hello.py
-templates
-hello.html
+- Hello.py
+- templates (folder):
+      - hello.html
+      
+```
+ls -laR ./*
+-rw-r--r--  1 andrzejhochbaum  staff  180 Feb 18 15:12 ./hello2.py
+
+./templates:
+total 8
+drwxr-xr-x  3 andrzejhochbaum  staff   96 Feb 18 15:12 .
+drwxr-xr-x  4 andrzejhochbaum  staff  128 Feb 18 15:12 ..
+-rw-r--r--  1 andrzejhochbaum  staff   91 Feb 18 15:12 hello.html
 
 ```
+
+
+
+
 **The term ‘web templating system’ refers to designing an HTML script in which the variable data can be inserted dynamically.** A web template system comprises of a template engine, some kind of data source and a template processor.
 
 Flask uses **jinga2** template engine. A web template contains HTML syntax interspersed placeholders for variables and expressions (in these case Python expressions) which are replaced values when the template is rendered.
 
 The following code is saved as hello.html in the templates folder.
-
+***template: ./templates/hello.html***
 ```
 <!doctype html>
 <html>
@@ -57,6 +73,21 @@ The following code is saved as hello.html in the templates folder.
 ```
 Next, run the following script from Python shell.
 
+***Main file: hello.py:***
+
+```
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def exampleIndex():
+    return render_template('hello.html')
+
+
+app.run(host='0.0.0.0', port= 5000)
+
+```
 
 
 ***

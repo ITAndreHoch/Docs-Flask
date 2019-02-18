@@ -153,7 +153,16 @@ cat ./templates/hello.html
 
 ***
 
+Key facts
 
+Templates can contain Python variables, to access {‌{x}}
+
+Pass the variables in render_template
+
+```
+# function return
+return render_template('hello.html', name=name, x=x)
+```
 
 
 

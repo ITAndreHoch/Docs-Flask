@@ -156,14 +156,33 @@ def copyright():
 
 ```
 
+Check:
+
+
+![Alt](images/flask1.png)
+
+
 
 Key facts
 
 * A route is a mapping of an URL, website address,  to a Python function
-
 * Add @app.route('/hello') before a function definition, where hello is your URL path
-
 * The python return string is shown in the web browser
+
+***Dynamic routes***
+
+```
+@app.route("/dynamic/<name>")
+def getname(name):
+    return name
+
+@app.route("/dynamic2/<name>/<age>")
+def getusr_age(name,age):
+    return "Your name -" + name + " " + age
+
+
+```
+![Alt](images/flask2.png)
 
 
 

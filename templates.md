@@ -14,7 +14,7 @@ def index():
 if __name__ == '__main__':
    app.run(debug = True)
    
-   ```
+```
    
 However, generating HTML content from Python code is cumbersome, especially when variable data and Python language elements like conditionals or loops need to be put. This would require frequent escaping from HTML.
 

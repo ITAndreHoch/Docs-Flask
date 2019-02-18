@@ -65,7 +65,7 @@ The following code is saved as hello.html in the templates folder.
 <html>
    <body>
    
-      <h1>Hello {{ name }}!</h1>
+      <h1>Hello World!</h1>
       
    </body>
 </html>
@@ -108,4 +108,47 @@ Don't forget the line
 # top of python file
 import from flask import Flask, render_template, request
 ```
+
+***
+
+**Dynamic variables**
+
+Example:
+
+cat hello2.py 
+
+```
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+
+@app.route('/hello/<user>')
+def hello_name(user):
+    return render_template('hello.html', name = user)
+
+
+app.run(host='0.0.0.0', port= 5000)
+
+```
+
+cat ./templates/hello.html 
+
+
+```
+
+<!doctype html>
+<html>
+   <body>
+   
+      <h1>Hello  - {{name}} !</h1>
+      
+   </body>
+</html>
+
+```
+
+
+
+
 

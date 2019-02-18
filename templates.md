@@ -149,7 +149,7 @@ cat ./templates/hello.html
 ```
 
 
-![Alt](images/flask3.png)
+![Alt, 20%](images/flask3.png) 
 
 
 ***

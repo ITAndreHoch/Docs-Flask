@@ -148,7 +148,7 @@ cat ./templates/hello.html
 
 ```
 
-<img src="images/flask3.png " alt="drawing" width="400"/>
+<img src="images/flask3.png " alt="drawing" width="300"/>
 
 
 ***

@@ -148,10 +148,7 @@ cat ./templates/hello.html
 
 ```
 
-<img src="images/flask3.png " alt="drawing" width="200"/>
-
-
-#![Alt, 20%](images/flask3.png) {width="40%"}
+<img src="images/flask3.png " alt="drawing" width="400"/>
 
 
 ***
